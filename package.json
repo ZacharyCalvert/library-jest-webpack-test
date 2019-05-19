@@ -1,0 +1,45 @@
+{
+  "name": "library-jest-webpack-test",
+  "version": "1.0.0",
+  "description": "A demo of a library build with unit testing and manual browser testing",
+  "main": "src/service.js",
+  "scripts": {
+    "build": "npm run test && npm run eslint && npm run pack",
+    "eslint": "eslint --ignore-path .eslintignore .",
+    "start": "node test/webpack-dev.js",
+    "test": "jest --coverage",
+    "pack": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZacharyCalvert/library-jest-webpack-test.git"
+  },
+  "keywords": [
+    "test",
+    "jest",
+    "webpack",
+    "hot"
+  ],
+  "author": "Zach Calvert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZacharyCalvert/library-jest-webpack-test/issues"
+  },
+  "homepage": "https://github.com/ZacharyCalvert/library-jest-webpack-test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.5.1",
+    "express": "^4.17.0",
+    "jasmine-reporters": "^2.3.2",
+    "jest": "^24.8.0",
+    "open": "^6.3.0",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}

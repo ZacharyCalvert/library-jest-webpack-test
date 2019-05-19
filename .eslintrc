@@ -1,0 +1,15 @@
+{
+  "plugins": ["jest"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  }, 
+  "rules": {
+    "no-console": "off",
+    "no-undef": "error"
+  },
+  "parser": "babel-eslint",
+  "extends": "eslint:recommended"
+}  
