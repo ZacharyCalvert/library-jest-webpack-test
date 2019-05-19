@@ -12,6 +12,10 @@ npm run build
 npm start
 ```
 
+The command ```npm run build``` will build a webpack minified library in the build directory along with the [source map](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map).  
+
+The command ```npm run start``` will launch an Express server with hot-loading configured against the library, so changes for the library will trigger a re-compile and the browser will be notified to reload the library.
+
 # Recommendations
 
 Install jest-cli and run one-off tests from the command line!
